@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 require('dotenv').config({ path: './variables.env'});
 
-mongooose.connect(proces.env.DATABASE);
+mongooose.connect(process.env.DATABASE);
 mongooose.connection.on('error', function(error){
     console.log('Error de mongoose', error);
 });
@@ -31,7 +31,7 @@ app.get('/nueva-persona', function(req,res){
 });
 
 
-app.listen(proces.envPORT,function(){
+app.listen(process.envPORT,function(){
     console.log('Aplication escuchando en http:/localhost:4000');
 });
 
