@@ -10,7 +10,7 @@ mongooose.connection.on('error', function(error){
     console.log('Error de mongoose', error);
 });
 
-require('./Schemas/persona');
+require('./Schemas/Persona');
 const modelopersona = mongooose.model('persona');
 
 app.get('/', function(req,res){
