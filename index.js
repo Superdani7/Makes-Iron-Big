@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 require('dotenv').config({ path: './variables.env'});
 
-mongooose.connect(process.env.DATABASE);
+mongooose.connect(proces.env.DATABASE);
 mongooose.connection.on('error', function(error){
     console.log('Error de mongoose', error);
 });
